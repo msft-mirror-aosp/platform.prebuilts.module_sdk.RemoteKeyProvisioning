@@ -14,10 +14,10 @@ package {
 
 java_sdk_library_import {
     name: "service-rkp",
-    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "rkpd_module" is true.
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     use_source_config_var: {
-        config_namespace: "rkpd_module",
-        var_name: "source_build",
+        config_namespace: "ANDROID",
+        var_name: "module_build_from_source",
     },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.rkpd"],
@@ -55,10 +55,10 @@ license {
 
 prebuilt_systemserverclasspath_fragment {
     name: "com.android.rkpd-systemserverclasspath-fragment",
-    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "rkpd_module" is true.
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     use_source_config_var: {
-        config_namespace: "rkpd_module",
-        var_name: "source_build",
+        config_namespace: "ANDROID",
+        var_name: "module_build_from_source",
     },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.rkpd"],

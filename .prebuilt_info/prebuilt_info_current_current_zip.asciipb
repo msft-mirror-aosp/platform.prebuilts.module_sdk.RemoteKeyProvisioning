@@ -1,14 +1,14 @@
 drops {
   android_build_drop {
-    build_id: "9405093"
-    target: "mainline_modules_sdks-userdebug"
-    source_file: "mainline-sdks/for-latest-build/current/com.google.android.rkpd/sdk/rkpd-sdk-current.zip"
+    build_id: "T1007284"
+    target: "train_build"
+    source_file: "mainline-sdks/for-UpsideDownCake-build/current/com.google.android.rkpd/sdk/rkpd-sdk-current.zip"
   }
   dest_file: "current/current.zip"
   version: ""
   version_group: ""
   git_project: "platform/prebuilts/module_sdk/RemoteKeyProvisioning"
-  git_branch: "master"
+  git_branch: "udc-dev"
   transform: TRANSFORM_UNZIP
   transform_options {
   }
